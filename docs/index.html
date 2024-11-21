@@ -1,3 +1,85 @@
-<html>
-  test
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Algemene button styling */
+        .button {
+            width: 202px;
+            height: 47px;
+            border: 1px solid #949494;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: 'RijksoverheidSansWebText-Regular', sans-serif;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 15px;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        /* Titel in de button */
+        .button .title {
+            font-size: 18px;
+            flex-grow: 1;
+        }
+
+        /* Tekst in de button */
+        .button .text {
+            font-size: 15px;
+        }
+
+        /* Logo styling */
+        .button img {
+            height: 20px;
+        }
+
+        /* Styling van de container voor de knoppen */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Buttons</title>
+</head>
+<body>
+
+    <div class="button-container">
+        <!-- DigiD button -->
+        <button class="button">
+            <span class="title">DigiD inloggen</span>
+            <span class="text">Login met DigiD</span>
+            <img src="digiD_logo.png" alt="DigiD Logo">
+        </button>
+
+        <!-- DigiD als gemachtigde button -->
+        <button class="button">
+            <span class="title">DigiD inloggen als gemachtigde</span>
+            <span class="text">Login met DigiD als gemachtigde</span>
+            <img src="digiD_logo.png" alt="DigiD Logo">
+        </button>
+
+        <!-- eHerkenning button -->
+        <button class="button">
+            <span class="title">eHerkenning</span>
+            <span class="text">Login met eHerkenning</span>
+            <img src="eherkenning_logo.png" alt="eHerkenning Logo">
+        </button>
+
+        <!-- European Login button -->
+        <button class="button">
+            <span class="title">European Login</span>
+            <span class="text">Login met European Login</span>
+            <img src="european_logo.png" alt="European Login Logo">
+        </button>
+    </div>
+
+</body>
 </html>
